@@ -44,7 +44,7 @@ header span {
 .main-section .wrapper {
     display: flex;
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
-         
+     align-items: center;    
     gap: 60px;
 }
 
@@ -53,6 +53,7 @@ header span {
     max-width: 425px;
     margin: 0 auto;
     padding: 422px 0 422px 150px;
+     gap: 60px;
 }
 
 .main-title {
