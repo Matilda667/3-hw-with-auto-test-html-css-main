@@ -38,14 +38,16 @@ header span {
     align-items: center;
 }
    
-
+.wrapper {
+    gap: 60px;
+}
 
 
 .main-section .wrapper {
     display: flex;
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
      align-items: center;    
-    gap: 60px;
+
 }
 
 .text-wrapper {
@@ -53,7 +55,7 @@ header span {
     max-width: 425px;
     margin: 0 auto;
     padding: 422px 0 422px 150px;
-     gap: 60px;
+     
 }
 
 .main-title {
@@ -80,6 +82,7 @@ header span {
   
     display: flex;
     flex-direction: column;
+  
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
 
@@ -107,7 +110,7 @@ select:hover,
 .info-wrapper {
     display: flex;
   justify-content: space-between;
-  gap: 80px;  📍 Свойство flexbox для расположения 2-х списков в ряд
+    📍 Свойство flexbox для расположения 2-х списков в ряд
 }
 
 .section-title {
@@ -181,11 +184,13 @@ form {
 }
 
 .btn:hover {
-    /* 📍 Стили для кнопки при наведении курсора */
+ cursor: pointer;   /* 📍 Стили для кнопки при наведении курсора */
 }
 
 .line {
+    
     margin: 60px 0;
+   
 }
 
 table {
@@ -194,6 +199,8 @@ table {
     font-weight: 400;
     font-size: 14px;
     margin: 0 auto;
+    flex-wrap: wrap;
+    
 }
 
 th, td {
@@ -214,5 +221,5 @@ footer {
 }
 
 .footer-link:hover {
-    /* 📍 Стили для ссылки при наведении курсора */
+  text-decoration: underline;  /* 📍 Стили для ссылки при наведении курсора */
 }
