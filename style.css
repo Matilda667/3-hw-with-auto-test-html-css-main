@@ -6,14 +6,15 @@
 
 .container {
     width: 100%;
-    max-width: 1140px;/* 📍 Максимальная ширина для контейнера */
-    display: flex;             
+    margin: 0px auto;
+    max-width: 1180px; /* ⚠️ ОБРАТИ ВНИМАНИЕ - максимальная ширина увеличилась на размер отступов, чтобы ширина контента оставалась корректной */
+    /* 📍 Свойство для внутрених отступов */
 }
 
 body {
     font-family: "Inter", sans-serif; 
     color: #303030;
-    min-width: 375px;/* 📍 Минимальная ширина */ 
+    /* 📍 Минимальная ширина */ 
 }
 
 header {
@@ -31,16 +32,9 @@ header span {
     background-color: #fafaff;
     padding: 60px 0;
     min-height: 100vh;
-    /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
-     justify-content: center;
-    flex-direction: column;
+    display: flex;
     align-items: center;
 }
-   
-.wrapper {
-    gap: 60px;
-}
-
 
 .main-section .wrapper {
     display: flex;
@@ -74,8 +68,7 @@ header span {
 .about-section .wrapper {
     display: flex;
     flex-direction: column;
-  
-    /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+    gap: 60px;
 }
 
 select {
@@ -93,14 +86,11 @@ select {
 
 select:hover,
 .text-field:hover {
-    /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
-
+    border-color: #2965f1;
 }
 
 .info-wrapper {
     display: flex;
-  justify-content: space-between;
-    📍 Свойство flexbox для расположения 2-х списков в ряд
 }
 
 .section-title {
@@ -116,7 +106,9 @@ select:hover,
 
 .frameworks-list,
 .books-list {
-   gap: 16px;  /* 📍 Свойства flexbox для отступов между элементами в списках */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .frameworks-list {
@@ -127,11 +119,14 @@ select:hover,
 }
 
 .skills-block {
-  flex-direction: column-reverse;  /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .skills {
-  gap: 20px;  /* 📍 Свойства flexbox для расположения элементов с классом .label */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .books-list {
@@ -174,7 +169,8 @@ form {
 }
 
 .btn:hover {
- cursor: pointer;   /* 📍 Стили для кнопки при наведении курсора */
+    background-color: rgba(41, 101, 241, 0.9);
+    cursor: pointer;
 }
 
 .line {
@@ -258,5 +254,3 @@ footer {
         /* 📍 Отступ между изображением и блоком с текстом */
     }
 }
-
-
